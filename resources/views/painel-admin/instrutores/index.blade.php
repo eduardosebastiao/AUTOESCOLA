@@ -25,7 +25,7 @@ if (!isset($id)) { //atribuindo um id se o id for vazio
                     <tr>
                         <th>Nome</th>
                         <th>Email</th>
-                        <th>CP</th>
+                        <th>Nif</th>
                         <th>Telefone</th>
                         <th>Vencimento </th>
                         <th>Acoes </th>
@@ -37,13 +37,13 @@ if (!isset($id)) { //atribuindo um id se o id for vazio
                     <tr>
                         <td>{{$item->nome}}</td>
                         <td>{{$item->email}}</td>
-                        <td>{{$item->cp}}</td>
+                        <td>{{$item->nif}}</td>
                         <td>{{$item->telefone}}</td>
                         <td>{{$item->vencimentp}}</td>
                         <td>{{$item->acoes}}</td>
                         <td>
-                            <a href="{{route('item.edit', $produto)}}"><i class="fas fa-edit text-info mr-1"></i></a>
-                            <a href="{{route('item.modal', $produto)}}"><i class="fas fa-trash text-danger mr-1"></i></a>
+                            <a href="{{route('item.edit', $item)}}"><i class="fas fa-edit text-info mr-1"></i></a>
+                            <a href="{{route('item.modal', $item)}}"><i class="fas fa-trash text-danger mr-1"></i></a>
                         </td>
                     </tr>
                     @endforeach
